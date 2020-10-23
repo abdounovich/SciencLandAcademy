@@ -37,7 +37,7 @@
 
         
 
-        <table dir="rtl" class="mt-5 table table-hover table-striped bg-white  text-dark text-right " style="opacity: 0.9">
+        <table dir="rtl" class="mt-5 m-2 table table-hover  table-striped bg-white  text-dark text-right " style="opacity: 0.9">
             <thead class="m-2 p-2 bg-success text-white">
               <tr dir="ltr" >
                 <th scope="col">#</th>

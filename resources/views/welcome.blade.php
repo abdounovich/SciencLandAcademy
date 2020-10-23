@@ -42,7 +42,7 @@
       
     </div>
     @endif
-        <div class="row position-static">
+        <div class="row">
           <div class=" mx-auto col col-12">
             <div class="card card-signin my-5   " style="opacity: 0.8"  >
               <div class="card-body  " >
