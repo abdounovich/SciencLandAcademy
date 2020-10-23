@@ -89,7 +89,7 @@
  الهاتف                            </strong>
                         </td>
                         <td class="text-danger">
-                            <a href="tel:{{$registration->telephone}}">{{$registration->telephone}}  </a>   
+                            <a class="text-danger" href="tel:{{$registration->telephone}}">{{$registration->telephone}}  </a>   
                         </td>
                     </tr>
                     <tr>        
