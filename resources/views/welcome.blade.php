@@ -111,16 +111,16 @@
     </optgroup>
                                 <optgroup label="__________________">
 
-                              <option value="l1">السنة أولى ثانوي</option>
-                              <option value="l2">السنة الثانية ثانوي</option>
-                              <option value="l3">السنة الثالثة ثانوي</option>
+                              <option value="السنة أولى ثانوي">السنة أولى ثانوي</option>
+                              <option value="السنة الثانية ثانوي">السنة الثانية ثانوي</option>
+                              <option value="السنة الثالثة ثانوي">السنة الثالثة ثانوي</option>
                                 </optgroup> <optgroup label="__________________">
-                              <option value="u0">متحصل على شهادة البكالوريا  </option>
-                              <option value="u1">متحصل على  شهادة الليسونس  </option>
-                              <option value="u2">متحصل على  شهادة الماستر   </option>
-                              <option value="u3">متحصل على  شهادة الماجستر   </option>
-                              <option value="u4">متحصل على  شهادة مهندس دولة    </option>
-                              <option value="u5">متحصل على  شهادة الدكتوراه    </option>
+                              <option value="متحصل على شهادة البكالوريا">متحصل على شهادة البكالوريا  </option>
+                              <option value="متحصل على  شهادة الليسونس ">متحصل على  شهادة الليسونس  </option>
+                              <option value="متحصل على  شهادة الماستر  ">متحصل على  شهادة الماستر   </option>
+                              <option value="متحصل على  شهادة الماجستر  ">متحصل على  شهادة الماجستر   </option>
+                              <option value="متحصل على  شهادة مهندس دولة ">متحصل على  شهادة مهندس دولة    </option>
+                              <option value="متحصل على  شهادة الدكتوراه ">متحصل على  شهادة الدكتوراه    </option>
                              </optgroup>
 
 
