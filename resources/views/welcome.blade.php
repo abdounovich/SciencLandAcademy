@@ -95,19 +95,19 @@
 
                         <optgroup label="__________________">
 
-                              <option value="p1">السنة أولى إبتدائي</option>
-                              <option value="p2">السنة الثانية إبتدائي</option>
-                              <option value="p3">السنة الثالثة إبتدائي</option>
-                              <option value="p4">السنة الرابعة إبتدائي</option>
-                              <option value="p5">السنة الخامسة إبتدائي</option>
-                              <option value="p6">السنة السادسة إبتدائي</option>
+                              <option value="السنة أولى إبتدائي">السنة أولى إبتدائي</option>
+                              <option value="السنة الثانية إبتدائي">السنة الثانية إبتدائي</option>
+                              <option value="السنة الثالثة إبتدائي">السنة الثالثة إبتدائي</option>
+                              <option value="السنة الرابعة إبتدائي">السنة الرابعة إبتدائي</option>
+                              <option value="السنة الخامسة إبتدائي">السنة الخامسة إبتدائي</option>
+                              <option value="السنة السادسة إبتدائي">السنة السادسة إبتدائي</option>
                         </optgroup>
     <optgroup label="__________________">
 
-                              <option value="m1">السنة أولى متوسط</option>
-                              <option value="m2">السنة الثانية متوسط</option>
-                              <option value="m3">السنة الثالثة متوسط</option>
-                              <option value="m4">السنة الرابعة متوسط</option>
+                              <option value="السنة أولى متوسط">السنة أولى متوسط</option>
+                              <option value="السنة الثانية متوسط">السنة الثانية متوسط</option>
+                              <option value="السنة الثالثة متوسط">السنة الثالثة متوسط</option>
+                              <option value="السنة الرابعة متوسط">السنة الرابعة متوسط</option>
     </optgroup>
                                 <optgroup label="__________________">
 
@@ -134,10 +134,10 @@
 
                       <select name="formation" id="inputEmail"   class="  text-info form-control form-control-lg text-right" style="font-size: 18px" >
                         <option value=""  disabled selected> من فضلك إختر عنصر من القائمة </option>
-                        <option value="formation3">دروس الدعم </option>
-                        <option value="formation2">دورة تعليم الحلاقة العصرية</option>
-                              <option value="formation1">دورة السوربان للأطفال</option>
-                              <option value="formation4">دورة تكوين مدربي السوربان</option>
+                        <option value="دروس الدعم">دروس الدعم </option>
+                        <option value="دورة تعليم الحلاقة العصرية">دورة تعليم الحلاقة العصرية</option>
+                              <option value="دورة السوربان للأطفال">دورة السوربان للأطفال</option>
+                              <option value="دورة تكوين مدربي السوربان">دورة تكوين مدربي السوربان</option>
                              
 
 
