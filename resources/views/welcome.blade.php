@@ -46,7 +46,7 @@
           <div class=" mx-auto col col-12">
             <div class="card card-signin my-5   " style="opacity: 0.8"  >
               <div class="card-body  " >
-                <div class=" d-flex  justify-content-center align-content-center m-0 p-2 text-right " style="opacity: 0.9 ;" >    
+                <div class=" d-flex  justify-content-center align-content-center  p-2 text-right " style="opacity: 0.9 ;" >    
          
                    <img src="{{asset('images/logo_full.png')}}" class="p-2 mt-2" width="420" height="150px" alt="">
 
