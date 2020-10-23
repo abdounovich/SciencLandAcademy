@@ -157,7 +157,7 @@
         </div>
     </div>
     <div class=" jumbotron  text-center mb-0 " style=" background: linear-gradient(to bottom,rgba(24, 13, 13, 0.667) , #070606 ); width:100% ;height:300px">
-      <div class="card-body " >
+      <div>
         <div class=" d-flex  justify-content-center align-content-center m-0 p-2 text-right " style="opacity: 0.9 ;" >    
  
            <img src="{{asset('images/logo_full.png')}}" class="p-2 mt-2" width="420" height="150px" alt="">
@@ -167,7 +167,7 @@
 
     
     </div>
-       
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
