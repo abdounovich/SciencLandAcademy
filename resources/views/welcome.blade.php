@@ -16,12 +16,16 @@
       }
       
       body {
-        background: #007bff;
-        background: linear-gradient(to right, #0062E6 , #c31837 );
+        background:url(https://images.pexels.com/photos/3740217/pexels-photo-3740217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) ;background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+       
         font-family: 'Changa', sans-serif;
 
       }
       select { text-align-last: right; }
+
+      
      </style>
 <link href="https://fonts.googleapis.com/css2?family=Changa:wght@700&display=swap" rel="stylesheet">  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -40,7 +44,7 @@
     @endif
         <div class="row position-static">
           <div class="col-sm-12 col-md-9 col-lg-7 mx-auto">
-            <div class="card card-signin my-5 "  >
+            <div class="card card-signin my-5  " style="opacity: 0.8"  >
               <div class="card-body " >
                 <div class=" d-flex  justify-content-center align-content-center m-0 p-2 text-right " style="opacity: 0.9 ;" >    
          
