@@ -70,7 +70,7 @@
                         <td>
                             <strong>
                                 <span class="glyphicon glyphicon-bookmark text-primary"></span> 
-                                البريد الإلكتروني                                                
+                               الإيميل                                               
                             </strong>
                         </td>
                         <td class="text-danger">
@@ -83,7 +83,7 @@
                         <td>
                             <strong>
                                 <span class="glyphicon glyphicon-eye-open text-primary"></span> 
-رقم الهاتف                            </strong>
+ الهاتف                            </strong>
                         </td>
                         <td class="text-danger">
                             {{$registration->telephone}}     
@@ -104,7 +104,7 @@
                         <td>
                             <strong>
                                 <span class="glyphicon glyphicon-calendar text-primary"></span>
-المستوى التعليمي                            </strong>
+المستوى                             </strong>
                         </td>
                         <td class="text-danger">
                             {{$registration->niveau}}     
@@ -114,7 +114,7 @@
                         <td>
                             <strong>
                                 <span class="glyphicon glyphicon-calendar text-primary"></span>
-الدورة المسجل فيها                            </strong>
+الدورة                              </strong>
                         </td>
                         <td class="text-danger">
                             {{$registration->formation}}     
