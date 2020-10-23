@@ -83,7 +83,7 @@
 
                       <select name="age" id="inputEmail" class=" text-danger form-control form-control-lg text-right" >
                           
-                        <option value="" disabled selected> من فضلك إختر عنصر من القائمة </option>
+                        <option value="" disabled selected>  إختر عنصر من القائمة </option>
                         @for ($i = 10; $i < 91; $i++)
                               <option value="{{$i}}"> {{$i}}  </option>
                           @endfor
@@ -95,7 +95,7 @@
                     <label for="inputEmail" class=" text-secondary"> : المستوى الدراسي </label>
 
                       <select name="niveau" id="inputEmail"   class="  text-warning form-control form-control-lg text-right" style="font-size: 18px" >
-                        <option  disabled selected> من فضلك إختر عنصر من القائمة </option>
+                        <option  disabled selected> إختر عنصر من القائمة</option>
 
                         <optgroup label="__________________">
 
@@ -137,7 +137,7 @@
                     <label for="inputEmail" class=" text-secondary">   :   التسجيل في دورة   </label>
 
                       <select name="formation" id="inputEmail"   class="  text-info form-control form-control-lg text-right" style="font-size: 18px" >
-                        <option value=""  disabled selected> من فضلك إختر عنصر من القائمة </option>
+                        <option value=""  disabled selected> إختر عنصر من القائمة </option>
                         <option value="دروس الدعم">دروس الدعم </option>
                         <option value="دورة تعليم الحلاقة العصرية">دورة تعليم الحلاقة العصرية</option>
                               <option value="دورة السوربان للأطفال">دورة السوربان للأطفال</option>
