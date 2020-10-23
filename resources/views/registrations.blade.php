@@ -38,10 +38,13 @@
         
         @foreach ( $registrations as $registration)
 
-        <table dir="rtl" class="mt-5 m-2 table table-hover  table-striped bg-dark  text-white text-right " style="opacity: 0.9">
+        <table dir="rtl" style="opacity: 0.8" class="mt-5 m-2 table table-hover table-borderless  shadow shadow-lg bg-white  table-striped text-dark text-right " style="opacity: 0.9">
            
             <tbody>
-                <tbody>
+
+            
+                      
+              
             
                     <tr>    
                         <td>
