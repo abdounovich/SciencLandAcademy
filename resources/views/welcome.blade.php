@@ -130,7 +130,7 @@
 
 
                   <div class="form-label-group p-2 m-2 text-right">
-                    <label for="inputEmail" class=" text-secondary">   : التسجيل في    </label>
+                    <label for="inputEmail" class=" text-secondary">   :   التسجيل في دورة   </label>
 
                       <select name="formation" id="inputEmail"   class="  text-info form-control form-control-lg text-right" style="font-size: 18px" >
                         <option value=""  disabled selected> من فضلك إختر عنصر من القائمة </option>
