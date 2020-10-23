@@ -42,10 +42,8 @@
               <tr dir="ltr" >
                 <th scope="col">#</th>
                 <th scope="col">: الإسم  </th>
-                <th scope="col"> : اللقب </th>
-                <th scope="col">: الهاتف </th>
-                <th scope="col">: البريد الإلكتروني </th>
-                <th scope="col">: العمر  </th>
+        
+              
                 <th scope="col">: المستوى </th>
                 <th scope="col">: الدورة  </th>
 
@@ -57,11 +55,13 @@
                  <tr class="">  
                     <th scope="row">{{$registration->id}}</th> 
 
-                    <th scope="row">{{$registration->nom}}</th> 
-                    <th scope="row">{{$registration->prenom}}</th> 
-                    <th scope="row">{{$registration->email}}</th> 
-                    <th scope="row">{{$registration->telephone}}</th> 
-                    <th scope="row">{{$registration->age}}</th> 
+                    <th scope="row">{{$registration->nom}}
+                    <p scope="row">{{$registration->prenom}}</p>
+                    <p scope="row">{{$registration->age}}</p> 
+                    <p scope="row">{{$registration->email}}</p>
+                    <p scope="row">{{$registration->telephone}}</p>
+                </th> 
+
                     <th scope="row">{{$registration->niveau}}</th> 
                     <th scope="row">{{$registration->formation}}</th> 
 
