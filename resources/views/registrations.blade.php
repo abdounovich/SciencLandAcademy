@@ -36,51 +36,109 @@
     <div class="row">
 
         
+        @foreach ( $registrations as $registration)
 
-        <table dir="rtl" class="mt-5 m-2 table table-hover  table-striped bg-white  text-dark text-right " style="opacity: 0.9">
-            <thead class="m-2 p-2 bg-success text-white">
-              <tr dir="ltr" >
-                <th scope="col">#</th>
-                <th scope="col">: الإسم  </th>
-        
-              
-                <th scope="col">: المستوى </th>
-                <th scope="col">: الدورة  </th>
-
-
-              </tr>
-            </thead>
+        <table dir="rtl" class="mt-5 m-2 table table-hover  table-striped bg-dark  text-white text-right " style="opacity: 0.9">
+           
             <tbody>
-                @foreach ( $registrations as $registration)
-                 <tr class="">  
-                    <th scope="row">{{$registration->id}}</th> 
-
-                    <th scope="row">{{$registration->nom}}
-                    <p scope="row">{{$registration->prenom}}</p>
-                    <p scope="row">{{$registration->age}}</p> 
-                    <p scope="row">{{$registration->email}}</p>
-                    <p scope="row">{{$registration->telephone}}</p>
-                </th> 
-
-                    <th scope="row">{{$registration->niveau}}</th> 
-                    <th scope="row">{{$registration->formation}}</th> 
-
-
-
-
-
-
-              
-               
-              </tr>
-                @endforeach
-
-             
-            </tbody>
+                <tbody>
+            
+                    <tr>    
+                        <td>
+                            <strong>
+                                <span class="glyphicon glyphicon-user  text-primary"></span>    
+                                الإسم                                                 
+                            </strong>
+                        </td>
+                        <td class="text-danger">
+                            {{$registration->nom}}     
+                        </td>
+                    </tr>
+                    <tr>        
+                        <td>
+                            <strong>
+                                <span class="glyphicon glyphicon-cloud text-primary"></span>  
+                                اللقب                                                 
+                            </strong>
+                        </td>
+                        <td class="text-danger">
+                            {{$registration->prenom}}     
+                        </td>
+                    </tr>
+    
+                    <tr>        
+                        <td>
+                            <strong>
+                                <span class="glyphicon glyphicon-bookmark text-primary"></span> 
+                                البريد الإلكتروني                                                
+                            </strong>
+                        </td>
+                        <td class="text-danger">
+                            {{$registration->email}}     
+                        </td>
+                    </tr>
+    
+    
+                    <tr>        
+                        <td>
+                            <strong>
+                                <span class="glyphicon glyphicon-eye-open text-primary"></span> 
+رقم الهاتف                            </strong>
+                        </td>
+                        <td class="text-danger">
+                            {{$registration->telephone}}     
+                        </td>
+                    </tr>
+                    <tr>        
+                        <td>
+                            <strong>
+                                <span class="glyphicon glyphicon-envelope text-primary"></span> 
+                                العمر                                                 
+                            </strong>
+                        </td>
+                        <td class="text-danger">
+                            {{$registration->age}} سنة      
+                        </td>
+                    </tr>
+                    <tr>        
+                        <td>
+                            <strong>
+                                <span class="glyphicon glyphicon-calendar text-primary"></span>
+المستوى التعليمي                            </strong>
+                        </td>
+                        <td class="text-danger">
+                            {{$registration->niveau}}     
+                        </td>
+                    </tr>
+                    <tr>        
+                        <td>
+                            <strong>
+                                <span class="glyphicon glyphicon-calendar text-primary"></span>
+الدورة المسجل فيها                            </strong>
+                        </td>
+                        <td class="text-danger">
+                            {{$registration->formation}}     
+                        </td>
+                    </tr>                                    
+                </tbody>
           </table>
+
+          @endforeach
+
      
     </div>
 </div>  
+
+
+
+<div class="container">
+    <div class="row">
+        <table class="table table-user-information">
+           
+        </table>
+    </div>
+</div>
+
 
 <div class=" container">
     <div  class="row d-flex justify-content-center">
