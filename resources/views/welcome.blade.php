@@ -43,7 +43,7 @@
     </div>
     @endif
         <div class="row position-static">
-          <div class="col-sm-12 col-md-9 col-lg-7 mx-auto">
+          <div class="">
             <div class="card card-signin my-5  " style="opacity: 0.8"  >
               <div class="card-body " >
                 <div class=" d-flex  justify-content-center align-content-center m-0 p-2 text-right " style="opacity: 0.9 ;" >    
