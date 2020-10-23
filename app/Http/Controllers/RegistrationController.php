@@ -55,7 +55,7 @@ class RegistrationController extends Controller
        $msg2="سنتصل بك قريبا";
        $message=$msg1."<p></p>".$msg2;
 
-       return view('welcome')->with('success', $message );   
+       return redirect()->back()->with('success', $message );   
 
 
     }
