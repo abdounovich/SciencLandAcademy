@@ -48,7 +48,7 @@
               <div class="card-body  " >
                 <div class=" d-flex  justify-content-center align-content-center  p-2 text-right " style="opacity: 0.9 ;" >    
          
-                   <img src="{{asset('images/logo_full.png')}}" class="p-2 mt-2" width="300" height="150px" alt="">
+                   <img src="{{asset('images/logo_full.png')}}" class="p-2 mt-2" width="300" height="120px" alt="">
 
                 </div>
 
