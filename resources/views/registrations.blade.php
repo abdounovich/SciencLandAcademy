@@ -17,8 +17,10 @@
       }
       
       body {
-        background: #007bff;
-        background: linear-gradient(to right, #0062E6 , #c31837 );
+        background:url(https://images.pexels.com/photos/3740217/pexels-photo-3740217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) ;background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+       
         font-family: 'Changa', sans-serif;
 
       }
