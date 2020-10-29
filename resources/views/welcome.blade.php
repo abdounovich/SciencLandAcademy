@@ -152,8 +152,9 @@
  <option value="installation systeme photovoltaique">installation systeme photovoltaique</option>
  <option value="دروس مسائية في اللغات الأجنبية ">دروس مسائية في اللغات الأجنبية </option>
  <option value="برنامج التحضيري والتمهيدي المعاصر  ">برنامج التحضيري والتمهيدي المعاصر </option>
-  <option value="Formation Assisstant medical"> Formation Assisstant medical</option>
 
+  <option value="Formation Assisstant medical"> Formation Assisstant medical</option>
+ <option value="دورة تكوينية في الصحافة و الإعلام  ">دورة تكوينية في الصحافة و الإعلام</option>
 
 
 
