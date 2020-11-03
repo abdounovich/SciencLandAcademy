@@ -157,6 +157,7 @@
  <option value="دورة تكوينية في الصحافة و الإعلام  ">دورة تكوينية في الصحافة و الإعلام</option>
  <option value="Formation Autocad "> Formation Autocad </option>
  <option value=" دورة تكوينية في الإعلام اللآلي  ">دورة تكوينية في الإعلام اللآلي</option>
+ <option value="دورة إدارة الموارد البشرية  ">دورة إدارة الموارد البشرية</option>
 
 
 
