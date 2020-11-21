@@ -158,6 +158,8 @@
  <option value="Formation Autocad "> Formation Autocad </option>
  <option value=" دورة تكوينية في الإعلام اللآلي  ">دورة تكوينية في الإعلام اللآلي</option>
  <option value="دورة إدارة الموارد البشرية  ">دورة إدارة الموارد البشرية</option>
+ <option value="دورة تركيب وتجميل الاظافر ">دورة تركيب وتجميل الاظافر </option>
+
 
 
 
