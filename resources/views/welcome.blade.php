@@ -159,13 +159,16 @@
   <option value="Formation Autocad "> Formation Management </option>
 
  <option value="Formation Autocad "> Formation Marketing </option>
+ <option value="Formation Autocad "> Formation Gestion de projet </option>
 
  <option value="Formation Autocad "> Formation AMADEUS billetterie et hotelerie </option>
  <option value=" دورة تكوينية في الإعلام اللآلي  ">دورة تكوينية في الإعلام اللآلي</option>
  <option value="دورة إدارة الموارد البشرية  ">دورة إدارة الموارد البشرية</option>
  <option value="دورة تركيب وتجميل الاظافر ">دورة تركيب وتجميل الاظافر </option>
  <option value=" دورة تكوينية في المحاسبة  ">دورة تكوينية في المحاسبة
-
+  <option value=" دورة تعلم اللغة الألمانية  ">دورة تعلم اللغة الألمانية 
+    <option value=" دورة تعلم اللغة التركية ">دورة تعلم اللغة التركية
+      <option value=" ورشة تحسين الخط للأطفال "> ورشة تحسين الخط للأطفال
 
 
 
