@@ -149,19 +149,11 @@
  <option value="دورة الأرشفة الإلكترونية ">دورة الأرشفة الإلكترونية</option>
  <option value="دورة تكوينية في المملحات والحلويات العصرية  ">دورة تكوينية في المملحات والحلويات العصرية</option>
  <option value="دورة تدريب مربية أطفال  ">دورة تدريب مربية أطفال</option>
- <option value="installation systeme photovoltaique">installation systeme photovoltaique</option>
  <option value="دروس مسائية في اللغات الأجنبية ">دروس مسائية في اللغات الأجنبية </option>
  <option value="برنامج التحضيري والتمهيدي المعاصر  ">برنامج التحضيري والتمهيدي المعاصر </option>
 
-  <option value="Formation Assisstant medical"> Formation Assisstant medical</option>
  <option value="دورة تكوينية في الصحافة و الإعلام  ">دورة تكوينية في الصحافة و الإعلام</option>
- <option value="Formation Autocad "> Formation Autocad </option>
-  <option value="Formation Autocad "> Formation Management </option>
 
- <option value="Formation Autocad "> Formation Marketing </option>
- <option value="Formation Autocad "> Formation Gestion de projet </option>
-
- <option value="Formation Autocad "> Formation AMADEUS billetterie et hotelerie </option>
  <option value=" دورة تكوينية في الإعلام اللآلي  ">دورة تكوينية في الإعلام اللآلي</option>
  <option value="دورة إدارة الموارد البشرية  ">دورة إدارة الموارد البشرية</option>
  <option value="دورة تركيب وتجميل الاظافر ">دورة تركيب وتجميل الاظافر </option>
@@ -169,7 +161,18 @@
   <option value=" دورة تعلم اللغة الألمانية  ">دورة تعلم اللغة الألمانية 
     <option value=" دورة تعلم اللغة التركية ">دورة تعلم اللغة التركية
       <option value=" ورشة تحسين الخط للأطفال "> ورشة تحسين الخط للأطفال
-
+        <option value=" دورة المحاسبة العامة "> دورة المحاسبة العامة 
+          <option value=" دورة تأمينات وبنوك "> دورة تأمينات وبنوك 
+         
+        <option value="Formation Autocad "> Formation Autocad </option>
+        <option value="Formation Autocad "> Formation Management </option>
+      
+       <option value="Formation Autocad "> Formation Marketing </option>
+       <option value="Formation Autocad "> Formation Gestion de projet </option>
+      
+       <option value="Formation Autocad "> Formation AMADEUS billetterie et hotelerie </option>
+       <option value="installation systeme photovoltaique">installation systeme photovoltaique</option>
+       <option value="Formation Assisstant medical"> Formation Assisstant medical</option>
 
 
 

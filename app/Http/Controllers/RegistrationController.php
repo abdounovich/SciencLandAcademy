@@ -68,7 +68,7 @@ class RegistrationController extends Controller
      */
     public function show(Registration $registration)
     {
-        $registrations=Registration::latest()->paginate(10);
+        $registrations=Registration::paginate(10);
         return view('registrations')->with('registrations',$registrations);
     }
 
