@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\FormationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +18,10 @@ use App\Http\Controllers\RegistrationController;
 
 Route::get('/', [RegistrationController::class, 'index']);
 Route::get('/registrations', [RegistrationController::class, 'show']);
-
 Route::post('/registration', [RegistrationController::class, 'store']);
 
+
+Route::get('/formations', [FormationController::class, 'index']);
+Route::post('/formations', [FormationController::class, 'store']);
 
 
