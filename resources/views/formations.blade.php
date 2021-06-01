@@ -29,6 +29,9 @@
      <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Changa:wght@700&display=swap" rel="stylesheet">  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
 </head>
   <body >
     
@@ -57,27 +60,23 @@
                     <div class=" mx-auto col col-12">
                       <div class="card card-signin my-5   " style="opacity: 0.8"  >
                         <div class="card-body  " >
-                          <div class=" d-flex  justify-content-center align-content-center  p-2 text-right " style="opacity: 0.9 ;" >    
-                   
-                             <img src="{{asset('images/logo_full.png')}}" class="p-2 mt-2" width="300" height="120px" alt="">
+           
           
-                          </div>
-          
-                        <h5 class="card-title text-center  text-danger"> ADMIN   </h5>
+                        <h5 class="card-title text-center  text-danger"> لوحة التحكم    </h5>
                           <form class="form-signin" method="POST" action="/formations">
           @csrf
-                              <div class="form-label-group p-2 m-2 text-right">
-                                  <label for="inputNom" class=" text-secondary" >: إسم الدورة</label>
-                                  <input type="text" id="inputNom" name="nom" class=" form-control form-control-lg bg-white" 
-                                  required>
+                              <div class="form-label-group my-2 text-right">
+                                  <label for="inputNom" class=" text-secondary" >أضف دورة جديدة</label>
+                                  <input type="text" id="inputNom" name="nom" dir="rtl" style=" font-size:15px" class="  form-control form-control-lg bg-white" 
+                                  required placeholder="إسم الدورة">
                                 </div>
                                
                                 
                         @php
                             $order=$formations->count()+1;
                         @endphp
-                                <input type="text" id="order" name="order"  value="{{$order}}" class=" form-control form-control-lg bg-white" >
-                                <input type="hidden" id="type" name="type" value="1" class=" form-control form-control-lg bg-white" >
+                                <input type="hidden" id="order" name="order"  value="{{$order}}" >
+                                <input type="hidden" id="type" name="type" value="1"  >
 
           
                                
@@ -88,8 +87,8 @@
           
           
                          
-                            <div class=" mt-5 p-2">
-                                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">
+                            <div class=" mt-1 ">
+                                <button class="btn  btn-primary col col-12  text-center" type="submit">
                                      أضف الدورة 
                                   </button>
                                   </div>
@@ -106,12 +105,19 @@
 
 
 
+<div class="container">
+                <h5 class=" text-center  text-danger"> قائمة الدورات</h5>
 
+</div>
 
         @foreach ( $formations as $formation)
 
-        <table dir="rtl" style="opacity: 0.8" class="mt-5 m-2 table table-hover   shadow shadow-lg bg-dark  table-striped text-white text-right " style="opacity: 0.9">
-           
+
+       
+        
+        <table dir="rtl" style="opacity: 0.8" class=" m-4 table  shadow shadow-lg bg-dark  text-white text-right " style="opacity: 0.9">
+                   <form action="/formations/edit/{{$formation->id}}" method="post">
+ @csrf
             <tbody>
 
             
@@ -119,46 +125,78 @@
               
             
                     <tr>    
-                        <td>
+                        <td  width="30%">
                             <strong>
                                 <span class="glyphicon glyphicon-user  text-primary"></span>    
                                 إسم الدورة                                                 
                             </strong>
                         </td>
-                        <td class="text-danger">
-                            {{$formation->nom}}     
+                        <td class="text-danger"  width="70%">
+                          <input type="text"  class="form-control" value=" {{$formation->nom}}  " name="nom" id=""> 
+                            
                         </td>
                     </tr>
                     <tr>        
-                        <td>
+                        <td  width="30%">
                             <strong>
                                 <span class="glyphicon glyphicon-cloud text-primary"></span>  
 ترتيب الدورة                             </strong>
                         </td>
-                        <td class="text-danger">
-                            {{$formation->order}}     
+                        <td class="text-danger" width="70%">
+                          <input type="hidden" value="{{$formation->type}}" name="type">
+
+
+    <div class="form-group">
+      <select id="my-select" class=" custom-select" name="order">
+        @for ($i = 1; $i < $formation->count()+1; $i++)
+        <option @if ($formation->order==$i) selected 
+       @endif >{{$i}}</option>
+        @endfor
+
+      </select>
+    </div>
+
                         </td>
+
+
+                                  
                     </tr>
     
                    
     
     
-                   
                    <tr>
-                       <td>تفعيل / إلغاء</td>
-                       <td>
 
-                        <div class="checkbox">
-                            <label>
-                              <input type="checkbox" data-toggle="toggle">
-                            </label>
-                          </div>
-                       </td>
+                    <td width="30%"> حالة الدورة</td>
+                    <td   > 
+  
+                  
+
+
+                      <div class="form-check">
+                        <input class="form-check-input " type="radio" name="type" value="1" id="flexRadioDefault1"  @if ($formation->type==1)
+                        checked
+                        @endif>
+                      <span class="mx-4"> مفعلة </span>
+                  
+
+                        <input class="form-check-input" type="radio" name="type" id="flexRadioDefault2" value="0" @if ($formation->type==0)
+                            checked
+                        @endif>
+                        <span class="mx-4"> ملغاة </span>
+                    
+                      </div>
+                    
+                      </td> 
+                     
                    </tr>
-                                                    
-                </tbody>
-          </table>
+                 <tr> <td colspan="2" class="text-center">                          <button class="btn btn-primary col col-12" type="submit">حفظ التعديلات </button>                            
+                 </td></tr>
+                     
+                       
+                </tbody>        </form>
 
+          </table>
           @endforeach
 
      
@@ -184,7 +222,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-</body>
+    <script>
+      function myFunction($fid,$cbid) {
+        var checkBox=document.getElementById($cbid);
+    
+       
+    /*     window.location = "/actif/"+$fid;
+     */  
+        
+    
+     if (checkBox.checked == true){
+      window.location = "/actif/"+$fid+"/0";
+      } else {
+        window.location = "/actif/"+$fid+"/1";
+    
+     }
+    
+    }
+    
+    ;</script>
+  </body>
 </html>
 
 

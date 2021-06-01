@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Registration;
+use App\Models\Formation;
+
 use Illuminate\Http\Request;
 
 class RegistrationController extends Controller
@@ -14,7 +16,9 @@ class RegistrationController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+
+        $formations=Formation::where("type","1")->get();
+        return view('welcome')->with("formations",$formations);
     }
 
     /**

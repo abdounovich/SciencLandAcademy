@@ -17,11 +17,19 @@ use App\Http\Controllers\FormationController;
 
 
 Route::get('/', [RegistrationController::class, 'index']);
-Route::get('/registrations', [RegistrationController::class, 'show']);
-Route::post('/registration', [RegistrationController::class, 'store']);
+Auth::routes();
+
+Route::get('/registrations', [RegistrationController::class, 'show'])->middleware('auth');
 
 
-Route::get('/formations', [FormationController::class, 'index']);
+Route::get('/formations', [FormationController::class, 'index'])->middleware('auth');
 Route::post('/formations', [FormationController::class, 'store']);
+Route::get('/actif/{id}/{type}', [FormationController::class, 'ativation'])->middleware('auth');
+Route::post('//formations/edit/{id}', [FormationController::class, 'update']);
 
 
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

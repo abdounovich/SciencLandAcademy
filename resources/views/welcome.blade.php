@@ -137,45 +137,15 @@
                     <label for="inputEmail" class=" text-secondary">   :   التسجيل في دورة   </label>
 
                       <select name="formation" id="inputEmail"   class="  text-info form-control form-control-lg text-right" style="font-size: 18px" >
+                       
                         <option value=""  disabled selected> إختر عنصر من القائمة </option>
-                        <option value="دروس الدعم">دروس الدعم </option>
-                        <option value="دورة تعليم الحلاقة العصرية">دورة تعليم الحلاقة العصرية</option>
-                              <option value="دورة السوربان للأطفال">دورة السوربان للأطفال</option>
-                              <option value="دورة تكوين مدربي السوربان">دورة تكوين مدربي السوربان</option>
-                              <option value="دورة بائع ومسير في الصيديلة">دورة بائع ومسير في الصيديلة</option>                             
- <option value="دورة السكرتارية الإدارية">دورة السكرتارية الإدارية</option>
- <option value="دورة تكوينة قاعدية في اللغة الفرنسية">دورة تكوينة قاعدية في اللغة الفرنسية</option>
- <option value="دورة الإنفوغرافيا ">دورة الإنفوغرافيا</option>
- <option value="دورة الأرشفة الإلكترونية ">دورة الأرشفة الإلكترونية</option>
- <option value="دورة تكوينية في المملحات والحلويات العصرية  ">دورة تكوينية في المملحات والحلويات العصرية</option>
- <option value="دورة تدريب مربية أطفال  ">دورة تدريب مربية أطفال</option>
- <option value="دروس مسائية في اللغات الأجنبية ">دروس مسائية في اللغات الأجنبية </option>
- <option value="برنامج التحضيري والتمهيدي المعاصر  ">برنامج التحضيري والتمهيدي المعاصر </option>
-
- <option value="دورة تكوينية في الصحافة و الإعلام  ">دورة تكوينية في الصحافة و الإعلام</option>
-
- <option value=" دورة تكوينية في الإعلام اللآلي  ">دورة تكوينية في الإعلام اللآلي</option>
- <option value="دورة إدارة الموارد البشرية  ">دورة إدارة الموارد البشرية</option>
- <option value="دورة تركيب وتجميل الاظافر ">دورة تركيب وتجميل الاظافر </option>
- <option value=" دورة تكوينية في المحاسبة  ">دورة تكوينية في المحاسبة
-  <option value=" دورة تعلم اللغة الألمانية  ">دورة تعلم اللغة الألمانية 
-    <option value=" دورة تعلم اللغة التركية ">دورة تعلم اللغة التركية
-      <option value=" ورشة تحسين الخط للأطفال "> ورشة تحسين الخط للأطفال
-        <option value=" دورة المحاسبة العامة "> دورة المحاسبة العامة 
-          <option value=" دورة تأمينات وبنوك "> دورة تأمينات وبنوك 
          
-        <option value="Formation Autocad "> Formation Autocad </option>
-        <option value="Formation Autocad "> Formation Management </option>
-      
-       <option value="Formation Autocad "> Formation Marketing </option>
-       <option value="Formation Autocad "> Formation Gestion de projet </option>
-      
-       <option value="Formation Autocad "> Formation AMADEUS billetterie et hotelerie </option>
-       <option value="installation systeme photovoltaique">installation systeme photovoltaique</option>
-       <option value="Formation Assisstant medical"> Formation Assisstant medical</option>
 
-
-
+                        @foreach ($formations as $formation)
+                        <option
+                            
+                         value="{{$formation->nom}}">{{$formation->nom}} </option>
+         @endforeach
 
                              
 

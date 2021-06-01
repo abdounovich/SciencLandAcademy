@@ -23,9 +23,12 @@ class FormationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function ativation($id,$type)
     {
-        //
+        $formation=Formation::find($id);
+        $formation->type=$type;
+        $formation->save();
+        return redirect()->back();
     }
 
     /**
@@ -42,8 +45,8 @@ class FormationController extends Controller
         $formation->order=$request->get("order");
 
 $formation->save();
-return redirect()->view("formations");
-    }
+return redirect()->back();
+}
 
     /**
      * Display the specified resource.
@@ -74,9 +77,20 @@ return redirect()->view("formations");
      * @param  \App\Models\Formation  $formation
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Formation $formation)
+    public function update($id,Request $request )
     {
-        //
+        $formation=Formation::find($id);
+        $formation2=Formation::where("order",$request->get("order"))->first();
+        $formation2->order=$formation->order;
+        $formation->nom=$request->get("nom");
+        $formation->type=$request->get("type");
+        $formation->order=$request->get("order");
+        $formation2->save();
+        $formation->save();
+
+        return redirect()->back();
+
+
     }
 
     /**
